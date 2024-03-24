@@ -1,7 +1,6 @@
 #ifndef ESTRUCTURAGRAFO24_H
 #define ESTRUCTURAGRAFO24_H
-#include <stdio.h>
-#include <stdlib.h>
+
 
 typedef unsigned int u32;
 
@@ -11,11 +10,11 @@ typedef struct {
     u32 num_vertices;
     u32 num_lados;
     u32 delta;
-    Vertice* vertices;
-} GrafoSf;
+    Vertice** vertices;
+} GrafoSt;
 
 typedef struct {
-    Vertice* vertices_vecinos;
+    Vertice** vertices_vecinos;
     u32 grado;
     u32 color;
 } Vertice;
